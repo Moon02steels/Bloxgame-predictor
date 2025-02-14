@@ -6,6 +6,10 @@ import os
 import random
 import string
 
+###### Moon02
+###### Moon02
+###### Moon02
+
 predictor_name = "Your Predictor name here"
 color = 0x191970
 
@@ -102,6 +106,12 @@ def winningColor(start, end):
     history = requests.get("https://api.bloxgame.com/games/roulette").json()["history"]
     info = [game['winningColor'] for game in history[start:end]]
     return info
+
+###### Moon02
+###### Moon02
+###### Moon02
+###### Moon02
+###### Moon02
 
 @bot.command()
 async def slide(ctx):
@@ -268,6 +278,11 @@ async def account(ctx):
     embed.set_footer(icon_url=img_user, text=f"💖・Thank you for using・{predictor_name}")
     await ctx.respond(embed=embed, ephemeral=True)
 
+###### Moon02
+###### Moon02
+###### Moon02
+###### Moon02
+
 @bot.command(description="Unring")
 async def unrig(ctx):
     db = read_database()
@@ -343,6 +358,11 @@ async def unrig(ctx):
     embed.add_field(name="`📔` Old ClientSeed", value=f"```{clientSeed1}```", inline=False)
     embed.add_field(name="`🔢` Nonce", value=f"```{nonce}```", inline=False)
     await ctx.respond(embed=embed)
+
+###### Moon02
+###### Moon02
+###### Moon02
+###### Moon02
 
 @bot.command()
 async def mines(ctx, tiles: Optional[int] = 4):
